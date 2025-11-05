@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini projetos de aquecimento</title>
+</head>
+<body>
+    <h1>Mini projetos de aquecimento</h1>
+    <button id="menos"> -</button>
+<strong id="valor">0</strong>
+<button id="mais">+</button>
+
+<script>let n = 0;
+const valor = document.querySelector('#valor');
+
+document.querySelector('#mais').onclick = () => { valor.textContent = ++n; };
+document.querySelector('#menos').onclick = () => { valor.textContent = -- n; };
+
+</script>
+
+</body>
+</html>

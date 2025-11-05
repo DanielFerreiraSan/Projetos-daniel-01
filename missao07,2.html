@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini quiz</title>
+</head>
+<body>
+    <h1>Mini quiz</h1>
+    <p>JavaScript roda no navegador ?</p>
+<button class="alt" data-ok="true">Sim</button>
+<button class="alt">Nao</button>
+<p id="resposta"></p>
+
+<script>
+    document.querySelectorAll('.alt').forEach(btn=>{
+btn.onclick = () => {
+document.querySelector('#resposta').textContent =
+btn.dataset.ok ? "Correto!" : "Tente novamente";
+
+}
+});
+</script>
+    
+</body>
+</html>
